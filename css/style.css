@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(D:/BridgeProblems/EmpManagementUI/Images/515183.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+h1
+{
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+h2
+{
+    text-align: start;
+    padding: 15px;
+}
+
+.register
+{
+    background: cornflowerblue;
+    width: 500px;
+    margin: 0px 0px 0px 430px;
+    color: whitesmoke;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 10px;
+}
+#register
+{
+    margin-left: 50px;
+}
+label{
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: italic;
+}
+
+#name{
+    width: 300px;
+    border: 3px;
+    border-radius: 3px;
+    outline: 0;
+    padding: 5px;
+}
+#ph{
+    width: 65px;
+    padding: 5px;
+    border: 3px;
+    border-radius: 3px;
+    outline: 0;
+}
+#num
+{
+    width: 230px;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+}
+#sub
+{
+    width: 200px;
+    padding: 7px;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+}
