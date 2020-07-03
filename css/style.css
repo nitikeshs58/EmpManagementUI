@@ -1,77 +1,110 @@
+/*CSS universal selector*/
 *{
     margin: 0;
     padding: 0;
 }
-
+/*CSS element selector*/
 body{
-    background-image: url(D:/BridgeProblems/EmpManagementUI/Images/515183.jpg);
+    background-color: lightcyan;
+  /*  background-image:url(D:/BridgeProblems/EmpManagementUI/Images/Engbackground.jpg);*/
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-x: center;
+    
 }
+/*CSS element selector*/
 h1
 {
     text-align: center;
     padding: 20px;
-    color: white;
+    color:black;
 }
+/*CSS element selector*/
 h2
 {
-    text-align: start;
+    text-align: center;
     padding: 15px;
+    color: black;
 }
 
+/* CSS class selector*/
 .register
 {
-    background: cornflowerblue;
+
+    background:rgb(116, 196, 223);
     width: 500px;
     margin: 0px 0px 0px 430px;
-    color: whitesmoke;
+    color: white;
     font-size: 18px;
     padding: 20px;
+
     border-radius: 10px;
+    border:1px solid black;
+    box-shadow: 0 0 10px 0 #000;
 }
+
+/*CSS id selector*/
 #register
 {
     margin-left: 50px;
 }
+
+
 label{
-    color: white;
+   
+    color: #130f40;
     font-family: sans-serif;
     font-size: 18px;
-    font-style: italic;
 }
 
-#name{
+/*CSS class selector*/
+.name{
+    height: 30px;
     width: 300px;
-    border: 3px;
+    border: 1px solid grey;
     border-radius: 3px;
-    outline: 0;
+    outline: none;
     padding: 5px;
 }
+
+/*CSS id selector*/
 #ph{
+    height: 40px;
     width: 65px;
     padding: 5px;
-    border: 3px;
+    border: 1px solid grey;
     border-radius: 3px;
     outline: 0;
 }
+
+/*CSS id selector*/
 #num
 {
+    height: 30px;
     width: 230px;
     padding: 5px;
-    border: none;
+    border: 1px solid grey;
     border-radius: 3px;
     outline: 0;
 }
+
+/*CSS id selector*/
 #sub
 {
+
     width: 200px;
     padding: 7px;
     font-size: 16px;
-    font-style: italic;
-    font-weight: 600;
-    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid grey;
     border-radius: 3px;
-    outline: 0;
+    outline: none;
+   align-self: center;
+}
+/* CSS Id selector*/
+#male
+{
+    text-decoration: black;
+    color: #130f40;
 }

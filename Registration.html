@@ -3,23 +3,31 @@
 <head>
     <title>Registraion form Creation</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>>
+</head>
     <body>
-        <h1>Registraion From</h1>
+        <h1><br></h1>
         <div class="register">
             <h2>Register Emp Details</h2>
-            <form method="post" id="register" action="=">
-                <label> First Name: </label><br>
-                <input type="text" name="FirstName" id="name"
-                placeholder="Enter your firstName"><br><br>
+            <form class="register_form" name="regform"method="post" id="register" onsubmit="return regvalidated()">
+                <label> Firstname: </label><br>
+                <input type="text" name="firstname" class="name"
+                placeholder="Enter your firstname">
+                <div id="firstname_error">Please fill up your firstname</div><br>
 
-                <label> Last Name: </label><br>
-                <input type="text" name="LastName" id="name"
-                placeholder="Enter your lastName"><br><br>
+                <label> Lastname: </label><br>
+                <input type="text" name="lastname" class="name"
+                placeholder="Enter your lastname">
+                <div id="lastname_error">Please fill up your lastname</div><br>
 
-                <label> Email id: </label><br>
-                <input type="email" name="email" id="name"
-                placeholder="Enter your email id"><br><br>
+                <label> Username: </label><br>
+                <input type="text" name="username" class="name"
+                placeholder="Enter your username">
+                <div id="username_error">Please fill up your username</div><br>
+
+                <label> Email-id: </label><br>
+                <input type="email" name="email" id="email" class="name"
+                placeholder="Enter your email id">
+                <div id="email_error">Please fill up your email</div><br>
 
                 <label> Mobile Number: </label><br>
                 <select id="ph">
@@ -28,23 +36,28 @@
                     <option>+93</option>
                     <option>+12</option>
                 </select>
-                <input type="number" name="Mobile Number" id="num"
-                placeholder="Enter your mobile number"><br><br>
+                <input type="number" name="mobilenumber" id="num"
+                placeholder="Enter your mobile number">
+                <div id="mobile_error">Please fill up your mobile number</div><br>
 
                 <label> Password: </label><br>
-                <input type="password" name="password" id="name"
-                placeholder="Enter your password"><br><br>
+                <input type="password" name="password" class="name"
+                placeholder="Enter your password">
+                <div id="password_error">Please fill up your password</div><br>
 
                 <label> Re-Enter password:</label><br>
-                <input type="password" name="password" id="name"
-                placeholder="Re_Enter your password"><br><br>
+                <input type="password" name="re-password" class="name"
+                placeholder="Re_Enter your password">
+                <div id="repassword_error">Please fill up same password as above</div><br>
 
                 <input type="radio" name="male" id="male"><span id="male">&nbsp; Male</span>&nbsp;&nbsp;
                 <input type="radio" name="male" id="male"><span id="male">&nbsp; Female</span>&nbsp;&nbsp;
-                <input type="radio" name="male" id="male"><span id="male">&nbsp; Other</span>&nbsp;&nbsp;<br><br>
-                <input type="submit>" value="Submit" id="sub"><br>
+                <input type="radio" name="male" id="male"><span id="male">&nbsp; Other</span>&nbsp;&nbsp;
+                <div id="repassword_error">Please choose your gender</div><br>
+                <input type="button" value="Submit" id="sub"><br>
+          
             </form>
         </div>
-
+        <script src="RegistrationValidation.js"></script>
     </body>
 </html>>
