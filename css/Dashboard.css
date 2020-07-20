@@ -1,0 +1,80 @@
+/*CSS universal selector*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*CSS element selector*/
+body{
+    background-color: #ffffff;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;    
+}
+
+/* CSS class selector */
+.Dashboard
+{
+    padding: 30px 30px 0 0;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    display: flex;
+}
+
+/* CSS id selector */
+#AddEmployeeButton
+{
+    text-align: center;
+    height: 45px;
+    width: 200px;
+    font-size: 20px;
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    background: #1A237E;
+    border: 3px;
+    border: 1px solid #3949AB;
+    border-radius: 5px;
+    transform: 0.5s; 
+}
+#AddEmployeeButton:hover{
+    background: #151c6a;
+}
+
+.dashTable
+{
+    font-family: sans-serif;
+}
+table
+{
+    border-collapse: collapse;
+    width: 60%;
+    margin: 50px auto;
+}
+table,th
+{
+    border: 1px solid #000000;
+    padding: 15px;
+    font-weight: bold;
+}
+table,td
+{
+    border: 1px solid #000000;
+    padding: 15px;
+}
+th
+{
+    font-size: 20px;
+    text-align: center;
+    font-weight: normal;
+    background-color: #addd;
+}
+td
+{
+    font-size: 15px;
+    color: #000000;
+    font-weight: normal;
+    text-align: center;
+}

@@ -2,25 +2,44 @@
 <html>
     <head>
         <title>Login form creation</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+         <!---employee favicon link -->
+        <link rel="shortcut icon" href="D:\BridgeProblems\EmpManagementUI\Images\Employee.ico" type="image/x-icon/png"> 
+        
         <link rel="stylesheet" type="text/css" href="css/loginStyle.css">   
-    </head>
+        <script src="LoginValidation.js"></script>
+
 </head>
 
     <body>
         <div class="formcontainer">
           <h1 class="label">Employee Login</h1>
-          <form class="login_form" method="post" name="form" onsubmit="return validated()">
-              <div class="font">Email or Username</div>
-              <input autocomplete="off" type="text" name="email">
-              <div id="email_error">Please fill up your email or username</div><br><br>
+          <form class="login_form" method="post" name="form" onsubmit="return userValidation()">
+          <!---->    
+            <div class="font">User Name</div>
+              <input type="text" id="userName"name="user" placeholder="Enter user name" class="form-control">
+              <span id="usererror" class="text-danger font-weight-bold"></span>
+              <br>
+              <!---->
               <div class="font2">Password</div>
-              <input type="password" name="password">
-              <div id="password_error">Please fill up your password</div>
-              <button type="submit">Login</button>
+              <input type="password"id="passWord" name="password" placeholder="Enter password" class="form-control">
+              <span id="passworderror" class="text-danger font-weight-bold"></span>
+              <!---->
+              <button type="submit" >Login</button>
+
               <a href="Registration.html">New Employee Register Here..</a>
           </form>
           </div>
-          <script src="LoginValidation.js"></script>
-    </body>
+        </body>
 </html>
 

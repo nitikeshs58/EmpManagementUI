@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit table data</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+         <!---employee favicon link -->
+        <link rel="shortcut icon" href="D:\BridgeProblems\EmpManagementUI\Images\Employee.ico" type="image/x-icon/png"> 
+
+        <!--Referance link to style.css-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+    <body>
+        <div class="register">
+            <h2>Edit table data</h2>
+            <form   class="register_form" name="regform" method="post" id="register">
+                
+                <div class="labelFont">
+                    <label>First Name:</label>
+                    <input type="text" id="firstNameId" name="firstName" class="name" placeholder="Enter first name" class="form-control">
+                <span id="firstNameError" class="text-danger font-weight-bold"></span><br>
+                </div>
+
+                <div class="labelFont">
+                    <label>Last Name:</label>
+                    <input type="text" id="lastNameId"name="lastName" class="name" placeholder="Enter last name" class="form-control">
+                    <span id="lastNameError" class="text-danger font-weight-bold"></span><br>
+                </div>
+
+                <div class="labelFont">
+                    <label>User Name:</label>
+                    <input type="text" id="userNameId"name="userName" class="name" placeholder="Enter user name" class="form-control">
+                    <span id="usererror" class="text-danger font-weight-bold"></span><br>    
+                </div>
+                
+                <div class="labelFont">
+                    <label>Email-id:</label>
+                    <input type="email" name="email" id="emailId" class="name" placeholder="Enter email-id">
+                    <span id="emailError" class="text-danger font-weight-bold"></span><br>
+                </div>
+
+                <div class="labelFont">
+                    <label>Gender:</label>
+                    <input type="text" name="male" id="male" class="name" placeholder="Enter gender">
+                    <span id="emailError" class="text-danger font-weight-bold"></span><br>
+                </div>
+
+                <div class="labelFont">
+                    <label>Mobile Number:</label>
+                    <input type="number" id="mobileNumberId" name="mobileNumber" class="num" placeholder="Enter mobile number">
+                    <span id="mobileerror" class="text-danger font-weight-bold"></span><br>
+                </div>
+
+                <button type="submit" id="sub" onclick="onFormSubmit()">Submit</button>
+            </form>
+        </div>
+        <script src="DashTable.js"></script>
+    </body>
+</html>>

@@ -1,46 +1,29 @@
-var email=document.forms['form']['email'];
-var password=document.forms['form']['password'];
+function userValidation()
+{
+    //elements
+    var userName = document.getElementById('userName').value;
+    var passWord=document.getElementById('passWord').value;
+    // Regx patterns
+    var usercheck=/^[A-Za-z0-9]+(?:[ _-][A-Za-z0-9]+)*$/ ;
+    var passcheck=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{7,20}$/ ;
 
-var email_error=document.getElementById('email_error');
-var pass_error=document.getElementById('pass_error');
-
-email.addEventListener('textInput',email_Verify);
-password.addEventListener('textInput',password_Verify);
-
-function validated(){
-    if (email.value.length < 9)
+    if(usercheck.test(userName))
     {
-        email.style.border="1px solid red";
-        email_error.style.display="block";
-        email.focus();
+        document.getElementById('usererror').innerHTML=" ";
+    }
+    else
+    {
+        document.getElementById('usererror').innerHTML="** UserName is invalid" ;
         return false;
     }
 
-    if (password.value.length < 6)
+    if(passcheck.test(passWord))
     {
-        password.style.border="1px solid red";
-        password_error.style.display="block";
-        password.focus();
+        document.getElementById('passworderror').innerHTML=" ";
+    }
+    else
+    {
+        document.getElementById('passworderror').innerHTML="** password is not matching" ;
         return false;
-    }
-}
-
-function email_Verify()
-{
-    if(email.value.length>=8)
-    {
-        email.style.border="1px solid silver";
-        email_error.style.display="none";
-        return true;
-    }
-}
-
-function password_Verify()
-{
-    if(password.value.length>=6)
-    {
-        password.style.border="1px solid silver";
-        password_error .style.display="none";
-        return true;
     }
 }

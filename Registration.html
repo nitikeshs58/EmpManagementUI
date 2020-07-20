@@ -2,60 +2,71 @@
 <html>
 <head>
     <title>Registraion form Creation</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+         <!---employee favicon link -->
+        <link rel="shortcut icon" href="D:\BridgeProblems\EmpManagementUI\Images\Employee.ico" type="image/x-icon/png"> 
+
+        <!--Referance link to style.css-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
     <body>
-        <h1><br></h1>
         <div class="register">
-            <h2>Register Emp Details</h2>
-            <form class="register_form" name="regform"method="post" id="register" onsubmit="return regvalidated()">
-                <label> Firstname: </label><br>
-                <input type="text" name="firstname" class="name"
-                placeholder="Enter your firstname">
-                <div id="firstname_error">Please fill up your firstname</div><br>
+            <h2>Registration</h2>
+            <form class="register_form" name="regform" method="post" id="register">
+                
+                <div class="labelFont">First Name:</div>
+                <input type="text" id="firstNameId" name="firstName" class="name" placeholder="Enter first name" class="form-control">
+                <span id="firstNameError" class="text-danger font-weight-bold"></span><br>
 
-                <label> Lastname: </label><br>
-                <input type="text" name="lastname" class="name"
-                placeholder="Enter your lastname">
-                <div id="lastname_error">Please fill up your lastname</div><br>
+                <div class="labelFont">Last Name:</div>
+                <input type="text" id="lastNameId"name="lastName" class="name" placeholder="Enter last name" class="form-control">
+                <span id="lastNameError" class="text-danger font-weight-bold"></span><br>
 
-                <label> Username: </label><br>
-                <input type="text" name="username" class="name"
-                placeholder="Enter your username">
-                <div id="username_error">Please fill up your username</div><br>
+                <div class="labelFont">User Name:</div>
+                <input type="text" id="userNameId"name="userName" class="name" placeholder="Enter user name" class="form-control">
+                <span id="usererror" class="text-danger font-weight-bold"></span><br>
 
-                <label> Email-id: </label><br>
-                <input type="email" name="email" id="email" class="name"
-                placeholder="Enter your email id">
-                <div id="email_error">Please fill up your email</div><br>
+                <div class="labelFont">Email-id:</div>
+                <input type="email" name="email" id="emailId" class="name" placeholder="Enter email-id">
+                <span id="emailError" class="text-danger font-weight-bold"></span><br>
 
-                <label> Mobile Number: </label><br>
+                <div class="labelFont">Mobile Number:</div>
                 <select id="ph">
                     <option>+91</option>
                     <option>+92</option>
                     <option>+93</option>
                     <option>+12</option>
                 </select>
-                <input type="number" name="mobilenumber" id="num"
-                placeholder="Enter your mobile number">
-                <div id="mobile_error">Please fill up your mobile number</div><br>
+                <input type="number" id="mobileNumberId" name="mobileNumber" class="num" placeholder="Enter mobile number">
+                <span id="mobileerror" class="text-danger font-weight-bold"></span><br>
 
-                <label> Password: </label><br>
-                <input type="password" name="password" class="name"
-                placeholder="Enter your password">
-                <div id="password_error">Please fill up your password</div><br>
+                <div class="labelFont">Password:</div>
+                <input type="password" id="passWord"name="password" class="name" placeholder="Enter password">
+                <span id="passwordrror" class="text-danger font-weight-bold"></span><br>
 
-                <label> Re-Enter password:</label><br>
-                <input type="password" name="re-password" class="name"
-                placeholder="Re_Enter your password">
-                <div id="repassword_error">Please fill up same password as above</div><br>
+                <div class="labelFont">Re-Enter password:</div>
+                <input type="password" name="re-password" id="rePassWord"class="name" placeholder="Re_Enter password">
+                <span id="repassworderror" class="text-danger font-weight-bold"></span><br>
 
-                <input type="radio" name="male" id="male"><span id="male">&nbsp; Male</span>&nbsp;&nbsp;
-                <input type="radio" name="male" id="male"><span id="male">&nbsp; Female</span>&nbsp;&nbsp;
-                <input type="radio" name="male" id="male"><span id="male">&nbsp; Other</span>&nbsp;&nbsp;
-                <div id="repassword_error">Please choose your gender</div><br>
-                <input type="button" value="Submit" id="sub"><br>
-          
+                <div class="labelFont">Gender: 
+                    <input type="radio" name="male" id="male"><span id="male">&nbsp;Male</span>&nbsp;&nbsp;
+                    <input type="radio" name="male" id="male"><span id="male">&nbsp;Female</span>&nbsp;&nbsp;
+                    <input type="radio" name="male" id="male"><span id="male">&nbsp;Other</span>&nbsp;&nbsp;
+                </div>
+                
+                <button type="submit" id="sub" onclick="userValidation(event)">Submit</button>
             </form>
         </div>
         <script src="RegistrationValidation.js"></script>

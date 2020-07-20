@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard of registration</title>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <!-- Popper JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+       <!---employee favicon link -->
+        <link rel="shortcut icon" href="D:\BridgeProblems\EmpManagementUI\Images\Home.ico" type="image/x-icon/png"> 
+        
+        <link rel="stylesheet" type="text/css" href="css/Dashboard.css">
+
+</head>
+<body>
+    <h2 style="margin: 30px 30px;">Employee Management App</h2>
+    <div class="Dashboard">
+        <a  href="AddEmployee.html"><button type="submit" id="AddEmployeeButton">+ Add Employee</button></a>
+    </div>
+    <table class="dashTable" id="tableId">
+        <tr>
+            
+            <th scope="col">FristName</th>
+            <th scope="col">LastName</th>
+            <th scope="col">UserName</th>
+            <th scope="col">EmailId</th>
+            <th scope="col">Gender</th>
+            <th scope="col">MobileNumber</th>
+            <th class="text-right">Edit</th>
+            <th class="text-right">Delete</th>
+        </tr>
+        <tbody>
+
+           
+        </tbody>
+    </table>
+    <script src="DashTable.js"></script>
+</body>
+</html>
